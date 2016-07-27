@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEncryptionTool", "DataE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fr8.Tools.Fr8TerminalTemplateInstaller", "Fr8.Tools.Fr8TerminalTemplateInstaller\Fr8.Tools.Fr8TerminalTemplateInstaller.csproj", "{7ED32482-35DA-47AB-A7CC-631609A88565}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E6188B14-48C9-4EB7-803E-51E126066B45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,11 +39,8 @@ Global
 		{4E494560-EC62-4F1F-9CA6-18727759222B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
-		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Demo|Any CPU.Build.0 = Demo|Any CPU
 		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
-		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Dev|Any CPU.Build.0 = Dev|Any CPU
 		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7ED32482-35DA-47AB-A7CC-631609A88565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7ED32482-35DA-47AB-A7CC-631609A88565}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ED32482-35DA-47AB-A7CC-631609A88565}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
