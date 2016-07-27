@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "terminalWebRole", "terminalWebRole\terminalWebRole.csproj", "{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "terminalCloudService", "terminalCloudService\terminalCloudService.ccproj", "{4E494560-EC62-4F1F-9CA6-18727759222B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEncryptionTool", "DataEncryptionTool\DataEncryptionTool.csproj", "{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fr8.Tools.Fr8TerminalTemplateInstaller", "Fr8.Tools.Fr8TerminalTemplateInstaller\Fr8.Tools.Fr8TerminalTemplateInstaller.csproj", "{7ED32482-35DA-47AB-A7CC-631609A88565}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Dev|Any CPU = Dev|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7F0CB5-9CD8-40D8-A539-51F451CCB29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E494560-EC62-4F1F-9CA6-18727759222B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B470AE-2161-4DC6-80B1-3A8EDBA4C729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED32482-35DA-47AB-A7CC-631609A88565}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
