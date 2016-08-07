@@ -214,17 +214,6 @@
           <Binding name="Endpoint3" endpointName="server443" hostHeader="demo-terminalInstagram.fr8.co" />
         </Bindings>
       </Site>
-      <Site name="PlanDirectory" physicalDirectory="..\..\..\Services\PlanDirectory\azure.publish">
-        <Bindings>
-          <Binding name="Endpoint1" endpointName="PlanDirectory" />
-          <Binding name="Endpoint2" endpointName="server80" hostHeader="directory.fr8.co" />
-          <Binding name="Endpoint2" endpointName="server80" hostHeader="dev-directory.fr8.co" />
-          <Binding name="Endpoint2" endpointName="server80" hostHeader="demo-directory.fr8.co" />
-          <Binding name="Endpoint3" endpointName="server443" hostHeader="directory.fr8.co" />
-          <Binding name="Endpoint3" endpointName="server443" hostHeader="dev-directory.fr8.co" />
-          <Binding name="Endpoint3" endpointName="server443" hostHeader="demo-directory.fr8.co" />
-        </Bindings>
-      </Site>
       <Site name="terminalBox" physicalDirectory="..\..\..\terminalBox\azure.publish">
         <Bindings>
           <Binding name="Endpoint1" endpointName="terminalBox" />
@@ -307,7 +296,6 @@
       <InputEndpoint name="terminalBox" protocol="http" port="54642" />
       <InputEndpoint name="terminalTelegram" protocol="http" port="59022" />
       <InputEndpoint name="terminalInstagram" protocol="http" port="10109" />
-      <InputEndpoint name="PlanDirectory" protocol="http" port="64879" />
     </Endpoints>
     <Imports>
       <Import moduleName="RemoteAccess" />
