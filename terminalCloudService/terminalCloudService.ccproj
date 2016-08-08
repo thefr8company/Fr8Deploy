@@ -126,8 +126,7 @@
     <SecondarySite Include="..\terminalYammer\terminalYammer.csproj" />
     <SecondarySite Include="..\terminalFacebook\terminalFacebook.csproj" />
     <SecondarySite Include="..\terminalInstagram\terminalInstagram.csproj" />
-    <SecondarySite Include="..\terminalFacebook\terminalFacebook.csproj" />
-    <SecondarySite Include="..\Services\PlanDirectory\PlanDirectory.csproj" />
+    <SecondarySite Include="..\terminalFacebook\terminalFacebook.csproj" />    
     <SecondarySite Include="..\terminalBox\terminalBox.csproj" />
     <SecondarySite Include="..\terminalTelegram\terminalTelegram.csproj" />
   </ItemGroup>
