@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web.Http;
 using System.Web.Http.Dispatcher;
 using Fr8.TerminalBase.BaseClasses;
 using Microsoft.Owin;
 using Owin;
-using $safeprojectname$.Controllers;
 using $safeprojectname$;
+using $safeprojectname$.Activities;
+using $safeprojectname$.Controllers;
 
 [assembly: OwinStartup(typeof(Startup))]
 
@@ -25,7 +27,8 @@ namespace $safeprojectname$
 
         public void Configuration(IAppBuilder app, bool selfHost)
         {
-            ConfigureProject(selfHost, null);
+            ConfigureProject(selfHost, TerminalBootstrapper.ConfigureLive);
+            SwaggerConfig.Register(_configuration);
             RoutesConfig.Register(_configuration);
             ConfigureFormatters();
             app.UseWebApi(_configuration);
@@ -37,7 +40,7 @@ namespace $safeprojectname$
 
         protected override void RegisterActivities()
         {
-            ActivityStore.RegisterActivity<Activities.My_Activity_v1>(Activities.My_Activity_v1.ActivityTemplateDTO);
+            ActivityStore.RegisterActivity<My_Activity_v1>(My_Activity_v1.ActivityTemplateDTO);
         }
 
         public override ICollection<Type> GetControllerTypes(IAssembliesResolver assembliesResolver)
@@ -45,6 +48,7 @@ namespace $safeprojectname$
             return new Type[] {
                     typeof(ActivityController),
                     typeof(TerminalController),
+                    typeof(AuthenticationController)
                 };
         }
     }
