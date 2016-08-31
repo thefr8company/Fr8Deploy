@@ -6,19 +6,21 @@ namespace $safeprojectname$
 {
     public static class TerminalData
     {
-        public static WebServiceDTO WebServiceDTO = new WebServiceDTO
+        public static ActivityCategoryDTO ActivityCategoryDTO = new ActivityCategoryDTO
         {
-            Name = "$projectname$",
-            IconPath = "http://yourserver.com/icon.png"
+            Name = "MyService",
+            IconPath = "/Content/icons/web_services/My-service-icon-64x64.png",
+            Type = "WebService"
         };
 
         public static TerminalDTO TerminalDTO = new TerminalDTO
         {
-            Endpoint = CloudConfigurationManager.GetSetting("$safeprojectname$.TerminalEndpoint"),
+            Endpoint = CloudConfigurationManager.GetSetting("terminalMyService.TerminalEndpoint"),
             TerminalStatus = TerminalStatus.Active,
-            Name = "$safeprojectname$",
-            Label = "$projectname$",
-            Version = "1"
+            Name = "terminalMyService",
+            Label = "MyService",
+            Version = "1",
+            AuthenticationType = AuthenticationType.External
         };
     }
 }

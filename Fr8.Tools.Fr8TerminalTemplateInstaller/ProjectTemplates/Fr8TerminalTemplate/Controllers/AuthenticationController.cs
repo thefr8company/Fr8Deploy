@@ -3,40 +3,61 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Fr8.Infrastructure.Data.DataTransferObjects;
 using Fr8.TerminalBase.Services;
-    
+
 namespace $safeprojectname$.Controllers
 {
     [RoutePrefix("authentication")]
     public class AuthenticationController : ApiController
     {
-        private readonly IHubEventReporter _eventReporter;
+        private readonly IHubLoggerService _loggerService;
 
-        public AuthenticationController(IHubEventReporter eventReporter)
+        public AuthenticationController()
         {
-            if (eventReporter == null)
-            {
-                throw new ArgumentNullException(nameof(eventReporter));
-            }
-
-            _eventReporter = eventReporter;
         }
 
         [HttpPost]
         [Route("request_url")]
         public ExternalAuthUrlDTO GenerateOAuthInitiationURL()
         {
-            // Add code which returns URL of the OAuth authorization window
-            throw new NotImplementedException();
+
+            // paste here auth logic code
+
+            var externalAuthUrlDTO = new ExternalAuthUrlDTO()
+            {
+            };
+
+            return externalAuthUrlDTO;
         }
 
         [HttpPost]
         [Route("token")]
         public async Task<AuthorizationTokenDTO> GenerateOAuthToken(ExternalAuthenticationDTO externalAuthDTO)
         {
-            // Add code which processes OAuth authorization and returns a OAuth token packaged 
-            // into an AuthorizationTokenDTO. See code of the existing terminals 
-            // (terminal Google, terminalDropbox) for an example. 
-            throw new NotImplementedException();
+            try
+            {
+                string code;
+                string state;
+                
+                // paste here auth logic code
+
+                return new AuthorizationTokenDTO
+                {
+                    //Token = oauthToken,
+                    //ExternalAccountId = userInfo.UserId,
+                    //ExternalAccountName = userInfo.UserName,
+                    //ExternalStateToken = state,
+                };
+            }
+            catch (Exception ex)
+            {
+                await _loggerService.ReportTerminalError(ex, externalAuthDTO.Fr8UserId);
+
+                return new AuthorizationTokenDTO()
+                {
+                    Error = "An error occurred while trying to authorize, please try again later."
+                };
+            }
         }
+        
     }
 }

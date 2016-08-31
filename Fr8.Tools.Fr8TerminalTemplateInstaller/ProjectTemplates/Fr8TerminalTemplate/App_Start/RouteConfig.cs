@@ -7,7 +7,7 @@ namespace $safeprojectname$
     {
         public static void Register(HttpConfiguration config)
         {
-            BaseTerminalWebApiConfig.Register("$safeprojectname$", config);
+            BaseTerminalWebApiConfig.Register("MyService", config);
         }
     }
 }
