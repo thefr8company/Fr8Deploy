@@ -35,6 +35,7 @@
       <Setting name="terminalFacebook.TerminalEndpoint" value="" />
       <Setting name="terminalTelegram.TerminalEndpoint" value="" />
       <Setting name="terminalInstagram.TerminalEndpoint" value="" />
+      <Setting name="terminalZendesk.TerminalEndpoint" value="" />
    	  <Setting name="OutboundUserName" value="fr8coprod" />
       <Setting name="OutboundUserPassword" value="b65rE?vt62wf" />
     </ConfigurationSettings>

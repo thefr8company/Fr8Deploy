@@ -30,6 +30,7 @@
       <Setting name="terminalBox.TerminalEndpoint" value="" />
       <Setting name="terminalTelegram.TerminalEndpoint" value="" />
       <Setting name="terminalInstagram.TerminalEndpoint" value="" />
+      <Setting name="terminalZendesk.TerminalEndpoint" value="" />
       <Setting name="OutboundUserName" value="fr8codev" />
       <Setting name="OutboundUserPassword" value="c3?56sNd" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
