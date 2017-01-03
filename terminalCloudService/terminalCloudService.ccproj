@@ -129,6 +129,7 @@
     <SecondarySite Include="..\terminalFacebook\terminalFacebook.csproj" />    
     <SecondarySite Include="..\terminalBox\terminalBox.csproj" />
     <SecondarySite Include="..\terminalTelegram\terminalTelegram.csproj" />
+	<SecondarySite Include="..\terminalZendesk\terminalZendesk.csproj" />
   </ItemGroup>
   <Target Name="CleanSecondarySites">
     <RemoveDir Directories="%(SecondarySite.RootDir)%(Directory)$(SecondarySitePublishDir)" />
